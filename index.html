@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Global Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            height: 100vh;
+            background: linear-gradient(45deg, #0fffeb, #6B4F96);
+            color: white;
+            overflow: hidden;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        /* Button Styling */
+        button {
+            background: #f38f0c;
+            border: none;
+            padding: 15px 40px;
+            margin: 15px;
+            font-size: 1.2rem;
+            color: white;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            font-family: 'Arial', sans-serif;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+            background: #008cff;
+        }
+
+        button:active {
+            transform: scale(1);
+            box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Paragraph Styling */
+        #para {
+            font-size: 1.5rem;
+            margin-top: 20px;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+
+        /* Image Styling */
+        #image {
+            width: 250px;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+            transition: all 0.5s ease;
+        }
+
+        /* Animation for fading the text in */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Media Query for mobile responsiveness */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            button {
+                padding: 12px 30px;
+                font-size: 1rem;
+            }
+            #image {
+                width: 200px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+    <button onclick="values()">Chand</button>
+    <button onclick="second()">Masjid</button>
+
+    <p id="para"></p>
+    <img id="image" src="" alt="results">
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
