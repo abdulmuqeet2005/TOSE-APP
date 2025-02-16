@@ -12,7 +12,7 @@ function values(){
 
     if(Math.ceil(Math.random()*2) === 2){
 
-        p.innerHTML ="p toss jeet gaye hai"
+        p.innerHTML ="Ap toss jeet gaye hai"
         image.src = chandImage
     }else{
         
